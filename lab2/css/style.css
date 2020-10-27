@@ -1,0 +1,114 @@
+/* Reset */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background: #444; */
+  color: #fff;  
+  background-image: url("../img/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.text-title {
+  font-size: 20px;
+  color: #f7c08a;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+  padding: 10px;  
+  background-color: #444444ad;
+}
+
+
+ /* img {
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 5px;
+  width: 350px;
+}  */
+
+ul {  
+  list-style: decimal;
+  padding-left: 50px;
+}
+
+.hyperlinks {
+  color: #FFF733;
+  text-decoration: none;
+  
+}
+
+.text-marked {  
+  color: #f7c08a
+}
+
+a:hover {
+  color: #f7c08a;  
+  text-decoration: underline;
+}
+
+h3{
+  text-shadow:  1px 1px 0px yellowgreen;
+}
+
+.column {
+  float: left;
+  /* width: 350px; */
+  width: 350px; 
+  height: 200px;
+  padding: 10px 10px 20px 20px;
+  
+}
+
+.container div.column img {
+  width: 350px; 
+  height: 200px;
+  border-radius: 5px; 
+
+}
+
+.img-title {
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.aboutMovie ul {
+  list-style: none;
+}
+
+.movie-field {
+  color: #FFF733;
+}
+
+ul.movieList li ul {
+  display: none;
+}
+
+ul.movieList>li:hover ul{ 
+  display: block;  
+  list-style: none;
+} 
+
+ul.movieList>li>ul>li:nth-child(2n-1){   
+  color: #FFF733;
+}
+
+ul.movieList>li>ul>li:nth-child(2n){   
+  text-indent: 40px;
+}
+
+
+ul.movieList li ul {
+  padding-left: 0;
+}
+
