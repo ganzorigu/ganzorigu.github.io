@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleLab4a.css">
+  <title>Lab4</title>
+</head>
+
+<body>
+  <header>
+    <h2>Workshop Registration</h2>
+  </header>
+  <Section>
+    <form action="/action_page.php">
+      <div class="formElements">
+        <ul>
+          <li> <a href="www.google.com">Register now while seats are available</a></li>
+          <li>
+            <!-- first name -->
+            <label for="fname">First Name <span>*</span></label>
+            <input type="text" id="fname" name="fname">
+          </li>
+          <li>
+            <!-- last name -->
+            <label for="lname">Last Name <span>*</span></label>
+            <input type="text" id="lname" name="lname">
+          </li>
+          <li>
+            <!-- Company/Institution -->
+            <label for="company">Company/Institution <span>*</span></label>
+            <input type="text" id="company" name="company">
+          </li>
+          <li>
+            <!-- Address -->
+            <label for="address">Address <span>*</span></label>
+            <textarea rows="4" cols="30" id="address"></textarea>
+            <!-- <div class="myTextArea">
+              <textarea rows="4" cols="30" id="address"></textarea>
+            </div> -->
+          </li>
+          <li>
+            <!-- City -->
+            <label for="city">City <span>*</span></label>
+            <input type="text" id="city" name="city">
+          </li>
+          <li>
+            <!-- State/Province/Region -->
+            <label for="state">State/Province/Region <span>*</span></label>
+            <select name="state">
+              <option default>-Select-</option>
+              <option>IA</option>
+              <option>IA</option>
+              <option>CA</option>
+              <option>MA</option>
+            </select>
+          </li>
+          <li>
+            <!-- Country -->
+            <label for="country">State/Province/Region <span>*</span></label>
+            <select name="country">
+              <option default>-Select-</option>
+              <option>USA</option>
+              <option>Mongolia</option>
+              <option>Japan</option>
+              <option>South Korea</option>
+            </select>
+          </li>
+          <li>
+            <!-- Email -->
+            <label for="email">Email <span>*</span></label>
+            <input type="email" id="email" name="email"> </li>
+          <li>
+            <!-- phonenumber -->
+            <label for="phonenumber">Phone Number <span>*</span></label>
+            <input type="text" id="phonenumber" name="phonenumber" placeholder="E.g: 641-3554-4477" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+          </li>
+        </ul>
+        <ul>
+          <li><a href="www.google.com">Lunch</a></li>
+          <li>
+            <!-- Meal Preference -->
+            <label for="meal">Meal Preference <span>*</span></label>
+            <select name="meal">
+              <option default>Vegetarian</option>
+              <option>Half Vegetarian</option>
+              <option>Non-Vegetarian</option>
+            </select></li>
+          <li class="title">Payment Details</li>
+          <li>
+            <div>
+              <p>Payment Mode</p>
+            </div>
+            
+            <div class="myRadioBtn">
+              <input type="radio" id="cash" name="payment" value="cash">
+              <label for="male">Male</label><br>
+              <input type="radio" id="cheque" name="payment" value="cheque">
+              <label for="cheque">Cheque</label><br>
+              <input type="radio" id="demand" name="payment" value="other">
+              <label for="demand">Demand Draft</label>              
+            </div>
+          </li>
+          <li><label for="cheque">DD/Cheque No. <span>*</span></label>
+            <input type="text" id="cheque" name="cheque" pattern="[1-9][0-9]{6}"> </li>
+          </li>
+          <li><label for="bankName">Drawn on (Bank Name) <span>*</span></label>
+            <input type="text" id="bankName" name="email"> </li>
+          </li>
+          <li><label for="payableAt">Payable at <span>*</span></label>
+            <input type="text" id="payableAt" name="payableAt"> </li>
+          </li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+
+    </form>
+  </Section>
+</body>
+
+</html>

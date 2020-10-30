@@ -1,0 +1,82 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+header h2 {
+  background: antiquewhite;
+  padding: 10px 10px 10px 20px;  
+}
+
+.formElements {
+  padding-top: 10px;
+  display: flex;
+  background-color: #ccc;
+}
+
+
+.formElements ul>li>label {
+  float: left;
+  width: 240px;
+  /* display: inline-block; */
+  text-align: right;
+  padding-right: 15px;
+  clear: left;
+  font-weight: bold;
+}
+
+.formElements ul {
+  padding: 0 12px;
+  list-style-type: none;
+  margin: 0px 12px;  
+}
+
+input[type=text]{
+  display: inline-block;
+  width: 200px;
+}
+
+textarea{
+  display: inline-block;
+  width: 212px;
+}
+
+.myRadioBtn {  
+  margin-left: 130px;
+  margin-top: 5px;
+} 
+
+.formElements ul>li>div>p {
+  font-weight: bold;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+
+ul>li {
+  margin-bottom: 15px;
+}
+
+div.buttons {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+div.buttons>input{
+  margin: 0 10px;
+}
+
+.formElements ul>li>label>span {
+  color: red;
+}
+
+select {
+  width: 150px;
+}
+
+.formElements>ul:nth-last-child(1) {
+  margin-top: 30px;
+}

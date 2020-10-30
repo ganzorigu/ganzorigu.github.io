@@ -1,0 +1,51 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.formElements {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px 20px 20px 20px;
+  flex: 1;
+}
+
+ul>li {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+ul>li>label,li>input,li>select,li>a,li>div {
+  flex: 1;
+}
+
+.formElements ul>li>label>span {
+  color: red;
+}
+
+header h2 {
+  background: antiquewhite;
+  padding: 10px 10px 10px 20px;
+  margin-bottom: 10px;
+}
+
+form>input {
+  /* align-items: center; */
+}
+
+form>div.buttons{
+  text-align: center;
+}
+
+div.buttons {
+  background: #333;
+  padding: 10px;
+}
+
+div.buttons>input{
+  margin: 0 10px;
+}
