@@ -178,7 +178,7 @@ const d = a.reduce(function (prevValue, elem, i, array) {
   return prevValue * elem;
 });
 console.log("Product of array: " + d);
-
+console.log("Product of array: " + d);
 
       // 10 
 
