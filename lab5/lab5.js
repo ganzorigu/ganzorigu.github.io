@@ -23,6 +23,9 @@ console.log("Expected output of myarr() is 40  " + myFunctionTest([1, 1], functi
   return myarr();
 }));
 
+//assertion
+console.assert(myarr().join() == "1,1", "1. myarr is failed");
+
 // 2. function max
 function max(num1, num2) {
   return (num1 > num2) ? num1 : num2;
@@ -32,7 +35,7 @@ console.log("Expected output of max(6,8) is " + result + " " + myFunctionTest(re
   return max(6, 8);
 }));
 //assertion
-console.assert(max(6, 8)==8,"2. max() is failed");
+console.assert(max(6, 8) == 8, "2. max() is failed");
 
 
 // 3. function max3
@@ -56,7 +59,7 @@ console.log("Expected output of max3(6, 8, 10) is " + result + " " + myFunctionT
   return max3(6, 8, 10);
 }));
 //assertion
-console.assert(max3(6, 8, 10)==10,"3. max3() is failed");
+console.assert(max3(6, 8, 10) == 10, "3. max3() is failed");
 
 // 4. function isVowel
 function isVowel(inChar) {
@@ -75,7 +78,7 @@ console.log("Expected output of isVowel(\"e\") is " + result + " " + myFunctionT
   return isVowel("e");
 }));
 //assertion
-console.assert(isVowel("e"),"4. isVowel() is failed");
+console.assert(isVowel("e"), "4. isVowel() is failed");
 
 // 5a. function sum,
 function sum(nums) {
@@ -95,9 +98,7 @@ console.log("Expected output of sum([10, 23, 10, 12]) is " + result + " " + myFu
   return sum([10, 23, 10, 12]);
 }));
 //assertion
-console.assert(sum([10, 23, 10, 12])==55, "5a. Sum is failed")
-
-
+console.assert(sum([10, 23, 10, 12]) == 55, "5a. Sum is failed")
 
 // 5b. function multiply
 function multiply(nums) {
@@ -117,7 +118,7 @@ console.log("Expected output of multiply([10, 23, 10]) is " + result + " " + myF
   return multiply([10, 23, 10]);
 }));
 //assertion
-console.assert(multiply([10, 23, 10])==2300, "5b. Multiply is failed")
+console.assert(multiply([10, 23, 10]) == 2300, "5b. Multiply is failed")
 
 
 // 6. function reverse 
@@ -135,7 +136,7 @@ console.log("Expected output of reverse(\"nahoM\") is " + result + " " + myFunct
   return reverse("nahoM");
 }));
 //assertion
-console.assert(reverse("nahoM")=="Mohan", "6. Reverse is failed");
+console.assert(reverse("nahoM") == "Mohan", "6. Reverse is failed");
 
 // 7. function findLongestWord
 function findLongestWord(words) {
@@ -155,7 +156,7 @@ console.log("Expected output of findLongestWord([\"hello\", \"aa\", \"c\"]) is "
   return findLongestWord(["hello", "aa", "c"]);
 }));
 //assertion
-console.assert(findLongestWord(["hello", "aa", "c"])==5, "7.findLongestWord is failed");
+console.assert(findLongestWord(["hello", "aa", "c"]) == 5, "7.findLongestWord is failed");
 
 
 // 8. function filterLongWords()
@@ -177,7 +178,7 @@ console.log("Expected output of findLongestWords([\"hello\", \"aa\", \"c\"]) is 
   return findLongestWords(["hello", "aa", "c"], 1);
 }));
 //assertion
-console.assert(findLongestWords(["hello", "aa", "c"],1).join()=="hello,aa", "Expected output of findLongestWords([\"hello\", \"aa\", \"c\"]) is "+result);
+console.assert(findLongestWords(["hello", "aa", "c"], 1).join() == "hello,aa", "Expected output of findLongestWords([\"hello\", \"aa\", \"c\"]) is " + result);
 
 // 9.  jsfiddle modified
 
