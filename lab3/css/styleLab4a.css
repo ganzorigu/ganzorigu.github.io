@@ -1,19 +1,41 @@
 *{
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box;
+       margin: 0;
+       padding: 0;
 }
 
-header h2 {
+body {
+  /* 
+    -Background color is #344a72
+  */
+  font-family: 'Raleway', sans-serif;
+  background-color: #344a72;
+  line-height: 1.6em;
+  font-size: 1.1em;
+}
+
+.headTitle h2 {
+  text-align: center;
   background: antiquewhite;
-  padding: 10px 10px 10px 20px;  
+  padding: 20px 10px 20px 20px;  
 }
 
+section {
+  max-width: 1200px;
+  min-width: 600px;
+  margin: auto;
+  margin-top: 40px;
+}
 .formElements {
   padding-top: 10px;
   display: flex;
-  background-color: #ccc;
+  flex-wrap: wrap;
+  background-color: #ccc;  
 }
 
+a {
+  text-decoration: none;
+}
 
 .formElements ul>li>label {
   float: left;
@@ -23,22 +45,25 @@ header h2 {
   padding-right: 15px;
   clear: left;
   font-weight: bold;
+  line-height: 1.9em;
 }
 
-.formElements ul {
+.formElements ul {  
   padding: 0 12px;
   list-style-type: none;
-  margin: 0px 12px;  
+  margin: 0px 12px; 
+  width: 480px; 
 }
 
 input[type=text]{
   display: inline-block;
-  width: 200px;
+  width: 210px;
+  padding: 0 10px;
 }
 
 textarea{
   display: inline-block;
-  width: 212px;
+  width: 210px;
 }
 
 .myRadioBtn {  
@@ -51,7 +76,7 @@ textarea{
 }
 
 .title {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 
@@ -60,13 +85,21 @@ ul>li {
 }
 
 div.buttons {
-  background: #333;
+  background: #ccc;
   padding: 10px;
   text-align: center;
 }
 
 div.buttons>input{
   margin: 0 10px;
+  background-color: #49c1a2;        
+  padding: 5px;  
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 120px;
+
+
 }
 
 .formElements ul>li>label>span {
