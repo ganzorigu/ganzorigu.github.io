@@ -1,0 +1,43 @@
+body {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 12pt;
+	margin-left: 20px;
+	margin-right: 20px;	
+}
+
+.setBackground {
+	background-image: url("https://images.unsplash.com/photo-1603979135031-0e51f9e9e9f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+
+
+#header {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+h1 {
+	font-size: 200%;
+	font-weight: normal;
+	font-style: italic;
+	/* font-family: "Impact", fantasy; */
+}
+
+legend {
+	/* font-family: "Impact", fantasy; */
+	font-size: 120%;
+}
+
+textarea {
+	font-family: monospace;
+	font-size: 12pt;
+}
+
+.biggerFont {
+	font-size: 24pt;
+}
+
+textarea {
+	width: 450px;
+	height: 150px;
+}
+
