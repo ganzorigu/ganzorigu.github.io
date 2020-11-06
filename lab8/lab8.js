@@ -58,26 +58,47 @@ console.log(myTeacher);
 myTeacher.teach("Math");
 
 
-const personClass = function(param1, param2){
-  let firstName = param1;
-  let lastName = param2;
-  return {
-    getName:function() {
-      return this.firstName+" "+lastName; 
-    }
-  };  
-}
-
-
-const teacherClass = function(param1, param2) {
-  let getName = Object.create(personClass(param1,param2));
-  return {
-    getName,
-    teach:function(subject){
-      console.log(" is teaching "+subject);
-    }
+const personClass = {
+  name: '',
+  setName: function(newName) {
+    this.name = newName;
   }
 }
+const teacherClass = Object.create(personClass);
+teacherClass.setSubject = function(subject) {
+  this.subject = subject;
+}
+
+teacherClass.teach = function(){
+  console.log(this.name + ' is now teaching ' + this.subject);
+}
+
+const william = Object.create(teacherClass);
+william.setName("William");
+william.setSubject("WAP");
+console.log(william);
+william.teach();
+
+// const personClass = function(param1, param2){
+//   let firstName = param1;
+//   let lastName = param2;
+//   return {
+//     getName:function() {
+//       return this.firstName+" "+lastName; 
+//     }
+//   };  
+// }
+
+
+// const teacherClass = function(param1, param2) {
+//   let getName = Object.create(personClass(param1,param2));
+//   return {
+//     getName,
+//     teach:function(subject){
+//       console.log(" is teaching "+subject);
+//     }
+//   }
+// }
 
 
 // const myPerson = personClass("Ganzorig","Ulziibayar");
